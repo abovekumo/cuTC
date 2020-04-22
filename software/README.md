@@ -32,8 +32,6 @@ To build the genetic search in /autotuning:
 
 ## Run
 
-`./ga` or `./run.sh`
-
 ### 1. Run the cuTC for single GPU
 
 To run the cuTC for single GPU in /single GPU/sgpu:
@@ -56,7 +54,7 @@ Please do not forget to change the name of algorithm type and tensor name in run
 
 ### 3. Run the auto-tuning
 
-
+`./ga` or `./run.sh`
 
 ## Change the parameters
 

@@ -17,50 +17,7 @@ extern "C"
 #include <omp.h>
 
 
-/**
-* @brief Update a three-mode model based on a given observation.
-*
-* @param DEFAULT_NFACTORS The rank.
-* @param train The training data.
-* @param nnz_index The index of the observation to update from.
-* @param mats The model to update.
 
-static inline void p_update_sgd(
-    sptensor_t * train,
-    idx_t nnz_index,
-    ordi_matrix ** mats,
-    double learning_rate,
-    double regularization_index
-    )
-{
-  idx_t const x = nnz_index;
-
-  assert(train->nmodes == 3);
-
-  idx_t ** ind = train->ind;
-  double * arow = mats[0] + (ind[0][x] * DEFAULT_NFACTORS);
-  double * brow = mats[1] + (ind[1][x] * DEFAULT_NFACTORS);
-  double * crow = mats[2] + (ind[2][x] * DEFAULT_NFACTORS);
-
-  /* predict value 
-  double predicted = 0;
-  for(idx_t f=0; f < DEFAULT_NFACTORS; ++f) {
-    predicted += arow[f] * brow[f] * crow[f];
-  }
-  double const loss = train->vals[x] - predicted;
-  double const rate = learning_rate;
-  double reg = regularization_index;
-
-  /* update rows 
-  for(idx_t f=0; f < DEFAULT_NFACTORS; ++f) {
-    double const moda = (loss * brow[f] * crow[f]) - (reg[0] * arow[f]);
-    double const modb = (loss * arow[f] * crow[f]) - (reg[1] * brow[f]);
-    double const modc = (loss * arow[f] * brow[f]) - (reg[2] * crow[f]);
-    arow[f] += rate * moda;
-    brow[f] += rate * modb;
-    crow[f] += rate * modc;
-  }
-}*/
 
 //the gpu kernel
 __global__ void p_update_sgd_gpu(cissbasic_t * d_traina, 

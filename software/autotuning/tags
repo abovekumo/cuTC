@@ -1,0 +1,407 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLSYN	register_communication.h	16;"	d
+BASE_H	base.h	2;"	d
+BUFFER_DOUBLEV4_SIZE	matrixnormal_slave.c	18;"	d	file:
+BUFFER_SIZE	config.h	7;"	d
+BbufferLength	mttkrp_slave.c	22;"	d	file:
+CALCULATE_CORE_NUM	base.h	18;"	d
+CBLAS_DIAG	cblas.h	/^enum CBLAS_DIAG {CblasNonUnit=131, CblasUnit=132};$/;"	g
+CBLAS_H	cblas.h	2;"	d
+CBLAS_INDEX	cblas.h	8;"	d
+CBLAS_ORDER	cblas.h	/^enum CBLAS_ORDER {CblasRowMajor=101, CblasColMajor=102};$/;"	g
+CBLAS_SIDE	cblas.h	/^enum CBLAS_SIDE {CblasLeft=141, CblasRight=142};$/;"	g
+CBLAS_TRANSPOSE	cblas.h	/^enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113};$/;"	g
+CBLAS_UPLO	cblas.h	/^enum CBLAS_UPLO {CblasUpper=121, CblasLower=122};$/;"	g
+CC	Makefile	/^CC = mpicc #-Wall$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -host -O3 -g -OPT:Olimit=0 -lm -lm_slave -OPT:IEEE_arith=2$/;"	m
+CFLAG_SLAVE	Makefile	/^CFLAG_SLAVE = -slave -O3 -msimd -g -OPT:Olimit=0 -OPT:IEEE_arith=2$/;"	m
+CHR_SIZE_SHPATH	config.h	34;"	d
+CHR_SIZE_SIMPLE	config.h	29;"	d
+COL	register_communication.h	8;"	d
+COLLISION_COST	config.h	35;"	d
+COLSYN	register_communication.h	15;"	d
+COMMON_H	common.h	2;"	d
+COORD_SIZE	config.h	33;"	d
+CORE_COLUMN_NUM	base.h	17;"	d
+CORE_GROUPS	base.h	27;"	d
+CORE_GROUPS	mttkrp_slave.c	21;"	d	file:
+CORE_NUM	base.h	19;"	d
+CPD_H	cpd.h	2;"	d
+CROSSOVER_RATE	config.h	9;"	d
+CSF_H	csf.h	2;"	d
+CblasColMajor	cblas.h	/^enum CBLAS_ORDER {CblasRowMajor=101, CblasColMajor=102};$/;"	e	enum:CBLAS_ORDER
+CblasConjTrans	cblas.h	/^enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113};$/;"	e	enum:CBLAS_TRANSPOSE
+CblasLeft	cblas.h	/^enum CBLAS_SIDE {CblasLeft=141, CblasRight=142};$/;"	e	enum:CBLAS_SIDE
+CblasLower	cblas.h	/^enum CBLAS_UPLO {CblasUpper=121, CblasLower=122};$/;"	e	enum:CBLAS_UPLO
+CblasNoTrans	cblas.h	/^enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113};$/;"	e	enum:CBLAS_TRANSPOSE
+CblasNonUnit	cblas.h	/^enum CBLAS_DIAG {CblasNonUnit=131, CblasUnit=132};$/;"	e	enum:CBLAS_DIAG
+CblasRight	cblas.h	/^enum CBLAS_SIDE {CblasLeft=141, CblasRight=142};$/;"	e	enum:CBLAS_SIDE
+CblasRowMajor	cblas.h	/^enum CBLAS_ORDER {CblasRowMajor=101, CblasColMajor=102};$/;"	e	enum:CBLAS_ORDER
+CblasTrans	cblas.h	/^enum CBLAS_TRANSPOSE {CblasNoTrans=111, CblasTrans=112, CblasConjTrans=113};$/;"	e	enum:CBLAS_TRANSPOSE
+CblasUnit	cblas.h	/^enum CBLAS_DIAG {CblasNonUnit=131, CblasUnit=132};$/;"	e	enum:CBLAS_DIAG
+CblasUpper	cblas.h	/^enum CBLAS_UPLO {CblasUpper=121, CblasLower=122};$/;"	e	enum:CBLAS_UPLO
+CbufferLength	mttkrp_slave.c	23;"	d	file:
+DEBUG_FLAG	base.h	26;"	d
+DEFAULT_CONV_GENS	config.h	26;"	d
+DEFAULT_CONV_VARIATION	config.h	27;"	d
+DEFAULT_END_GENERATION	config.h	23;"	d
+DEFAULT_END_TYPE	config.h	21;"	d
+DEFAULT_ERROR	base.h	/^static double const DEFAULT_ERROR = 1e-5;$/;"	v
+DEFAULT_FF_TYPE	config.h	20;"	d
+DEFAULT_F_THRESH_SHPATH	config.h	25;"	d
+DEFAULT_F_THRESH_SIMPLE	config.h	24;"	d
+DEFAULT_ITERATE	base.h	/^static idx_t const DEFAULT_ITERATE = 50;$/;"	v
+DEFAULT_POP_SIZE	config.h	22;"	d
+DEFAULT_RAND_SEED	config.h	19;"	d
+DEFAULT_RANK	base.h	/^static idx_t const DEFAULT_RANK = 16;$/;"	v
+DIM	config.h	40;"	d
+E	common.h	6;"	d
+EPS	common.h	5;"	d
+FF_SHPATH	config.h	13;"	d
+FF_SIMPLE	config.h	12;"	d
+FITNESS_H_	fitness.h	2;"	d
+FUNC_NUM	config.h	39;"	d
+GA_H_	ga.h	2;"	d
+I	matrixprocess.h	/^   idx_t I;$/;"	m	struct:__anon1
+I	matrixprocess.h	/^   idx_t I;$/;"	m	struct:__anon2
+INF	common.h	4;"	d
+INIT_H_	init.h	2;"	d
+IO_H	io.h	2;"	d
+J	matrixprocess.h	/^   idx_t J;$/;"	m	struct:__anon1
+J	matrixprocess.h	/^   idx_t J;$/;"	m	struct:__anon2
+JbufferLength	mttkrp_slave.c	24;"	d	file:
+L	matrixnormal_host.h	/^  double * L;$/;"	m	struct:__anon9
+LIBS	Makefile	/^LIBS = -hybrid -g -lslave$/;"	m
+LINK	Makefile	/^LINK = -lm .\/cblas_LINUX0324.a .\/libswblas0324.a $/;"	m
+LOWER_MASK	mt_mpi.h	23;"	d
+M	kernel_slave.c	/^double *OShift,*M,*y,*z,*x_bound;$/;"	v
+M	mt_mpi.h	17;"	d
+MATRIXNORMAL_HOST_H	matrixnormal_host.h	2;"	d
+MATRIXPROCESS_H	matrixprocess.h	2;"	d
+MATRIX_A	mt_mpi.h	21;"	d
+MAX_CF	common.h	3;"	d
+MAX_COST	config.h	38;"	d
+MAX_NMODES	base.h	15;"	d
+MEMORY	register_communication.h	18;"	d
+MODES	base.h	16;"	d
+MTTKRP_H	mttkrp.h	2;"	d
+MT_LF_H	mt_mpi.h	2;"	d
+MT_MAX	mt_mpi.h	18;"	d
+MUTATION_RATE	config.h	10;"	d
+M_AVG_FITNESS_THRESHHOLD	config.h	16;"	d
+M_FIXED_GENERATIONS	config.h	14;"	d
+M_LOCAL_CONVERGENCE	config.h	17;"	d
+M_MAX_FITNESS_THRESHHOLD	config.h	15;"	d
+Mat	matrixnormal_host.h	/^  ordi_matrix * Mat;$/;"	m	struct:__anon9
+N	mt_mpi.h	16;"	d
+NUM_RNG	mt_mpi.h	15;"	d
+N_POINTS	config.h	32;"	d
+OShift	common.h	/^  void *OShift;$/;"	m	struct:genetic_array
+OShift	kernel_slave.c	/^double *OShift,*M,*y,*z,*x_bound;$/;"	v
+PHISICAL_CORE_COLUMN_NUM	base.h	22;"	d
+PHISICAL_CORE_NUM	base.h	20;"	d
+PHISICAL_CORE_ROW_NUM	base.h	21;"	d
+PI	common.h	7;"	d
+PRNT_CHRS	config.h	4;"	d
+PRNT_DATA	config.h	2;"	d
+PRNT_FITS	config.h	6;"	d
+PRNT_INFO	config.h	5;"	d
+PRNT_RATE	config.h	1;"	d
+PRNT_STAT	config.h	3;"	d
+REGISTER_COMMUNICATION_H	register_communication.h	2;"	d
+REG_GETC	register_communication.h	13;"	d
+REG_GETR	register_communication.h	12;"	d
+REG_PUTC	register_communication.h	11;"	d
+REG_PUTR	register_communication.h	10;"	d
+REPORT_H	report.h	2;"	d
+RESULT_CORE_COLUMN_ID	base.h	23;"	d
+RESULT_CORE_NUM	base.h	24;"	d
+RESULT_MEM_REF	base.h	25;"	d
+ROW	register_communication.h	9;"	d
+ROWSYN	register_communication.h	14;"	d
+RTC_TIME	matrixnormal_slave.c	17;"	d	file:
+RTC_TIME	mttkrp_slave.c	19;"	d	file:
+SPLATT_BIN_COORD	io.h	/^  SPLATT_BIN_COORD,$/;"	e	enum:__anon14
+SPLATT_BIN_CSF	io.h	/^  SPLATT_BIN_CSF$/;"	e	enum:__anon14
+SPLATT_FILE_BIN_COORD	io.h	/^  SPLATT_FILE_BIN_COORD        \/* a binary version of the coordinate format *\/$/;"	e	enum:__anon13
+SPLATT_FILE_TEXT_COORD	io.h	/^  SPLATT_FILE_TEXT_COORD,      \/* plain list of tuples + values *\/$/;"	e	enum:__anon13
+SPTENSOR_H	sptensor.h	2;"	d
+SP_BOUND	config.h	31;"	d
+SS_MAX	base.h	14;"	d
+SS_MIN	base.h	13;"	d
+SWCC	Makefile	/^SWCC = sw5cc.new #-Wall$/;"	m
+TARGET	Makefile	/^TARGET = ga$/;"	m
+TEMPERING_MASK_B	mt_mpi.h	19;"	d
+TEMPERING_MASK_C	mt_mpi.h	20;"	d
+TOTAL_BUFFER_SIZE	mttkrp_slave.c	20;"	d	file:
+TRANS_SIZE	matrixnormal_slave.c	19;"	d	file:
+TYPES_H_	types.h	2;"	d
+UPPER_MASK	mt_mpi.h	22;"	d
+UTIL_H	util.h	2;"	d
+argmax_elem	base.c	/^idx_t argmax_elem(idx_t const* const arr,$/;"	f
+asyfunc	kernel_slave.c	/^void asyfunc (double *x, double *xasy, int nx, double beta)$/;"	f
+bi_rastrigin_func	kernel_slave.c	/^void bi_rastrigin_func (double *x, double *f, int nx, double *Os, int r_flag) \/* Lunacek Bi_rastrigin Function *\/$/;"	f
+binToDecimal	fitness.c	/^double binToDecimal(char* bin, unsigned int begin, unsigned int end) {$/;"	f
+bin_header	io.h	/^} bin_header;$/;"	t	typeref:struct:__anon15
+blockref	mttkrp.h	/^  idx_t* blockref;$/;"	m	struct:__anon12
+center	types.h	/^    point    *center;$/;"	m	struct:__anon6
+cf02	kernel_slave.c	/^void cf02 (double *x, double *f, int nx, double *Os,int r_flag) \/* Composition Function 2 *\/$/;"	f
+cf_cal	kernel_slave.c	/^void cf_cal(double *x, double *f, int nx, double *Os,double * delta,double * bias,double * fit, int cf_num)$/;"	f
+check_complete	ga.c	/^void check_complete(deme *subpop) {$/;"	f
+chr	types.h	/^    char        *chr;$/;"	m	struct:__anon7
+chr_size	types.h	/^    int         chr_size;$/;"	m	struct:__anon8
+colid	matrixprocess.h	/^   idx_t* colid;$/;"	m	struct:__anon2
+collision	fitness.c	/^int collision(point *A, point *B, object *obj) {$/;"	f
+column_id	matrixnormal_slave.c	/^__thread_local int row_id, column_id;$/;"	v
+complete	types.h	/^    int         complete;$/;"	m	struct:__anon8
+compute_genetic	kernel_slave.c	/^void compute_genetic(genetic_array *ga) {$/;"	f
+conv_gen	types.h	/^    int         conv_gen;$/;"	m	struct:__anon8
+conv_var	types.h	/^    double      conv_var;$/;"	m	struct:__anon8
+cpd_als	cpd.c	/^int cpd_als(csf_sptensor *atensors,$/;"	f
+cpd_als_iterate	cpd.c	/^void cpd_als_iterate($/;"	f
+cpd_als_main	test.c	/^idx_t cpd_als_main(void)$/;"	f
+cpd_post_process	cpd.c	/^void cpd_post_process($/;"	f
+crossover	ga.c	/^void crossover(deme *subpop) {$/;"	f
+csf_alloc	csf.c	/^static void csf_alloc($/;"	f	file:
+csf_display	csf.c	/^void csf_display(csf_sptensor* ct,idx_t* blockref)$/;"	f
+csf_frobsq	csf.c	/^double csf_frobsq($/;"	f
+csf_sparsity	csf.h	/^}csf_sparsity;$/;"	t	typeref:struct:__anon3
+csf_sptensor	csf.h	/^}csf_sptensor;$/;"	t	typeref:struct:__anon4
+csf_tensor_free	csf.c	/^int csf_tensor_free(csf_sptensor* atensor)$/;"	f
+csf_tensor_load	csf.c	/^int csf_tensor_load(char const* const fname,$/;"	f
+cur_gen	types.h	/^    int         cur_gen;$/;"	m	struct:__anon8
+deme	types.h	/^} deme;$/;"	t	typeref:struct:__anon8
+dif_powers_func	kernel_slave.c	/^void dif_powers_func (double *x, double *f, int nx, double *Os,int r_flag) \/* Different Powers *\/$/;"	f
+dims	csf.h	/^  idx_t dims[MAX_NMODES];  \/\/number of rows in each factor$/;"	m	struct:ktensors
+dims	csf.h	/^  idx_t dims[MAX_NMODES]; \/\/dimension of each mode$/;"	m	struct:__anon4
+dims	sptensor.h	/^  idx_t* dims;   \/** An array containing the dimension of each mode. *\/  $/;"	m	struct:__anon16
+end_gen	types.h	/^    int         end_gen;$/;"	m	struct:__anon8
+end_type	types.h	/^    int         end_type;$/;"	m	struct:__anon8
+export_population	init.c	/^void export_population(deme *subpop, char *filename) {$/;"	f
+extension	io.c	/^  char * extension;$/;"	m	struct:ftype	file:
+f	common.h	/^  void *f;$/;"	m	struct:genetic_array
+f_thresh	types.h	/^    double      f_thresh;$/;"	m	struct:__anon8
+factors	csf.h	/^  double* factors[MAX_NMODES];  \/\/row-major matrix factors for each mode$/;"	m	struct:ktensors
+ff_type	types.h	/^    int         ff_type;$/;"	m	struct:__anon8
+fids	csf.h	/^  idx_t* fids[MAX_NMODES]; \/\/the index of node. Like the j_index in documentation$/;"	m	struct:__anon3
+file_extensions	io.c	/^static struct ftype file_extensions[] = {$/;"	v	typeref:struct:ftype	file:
+fill_binary_idx	io.c	/^void fill_binary_idx($/;"	f
+fill_binary_idx	io.h	99;"	d
+fill_binary_val	io.c	/^void fill_binary_val($/;"	f
+fill_binary_val	io.h	117;"	d
+fill_rand	matrixprocess.c	/^static void fill_rand(double* valptr, idx_t number)$/;"	f	file:
+fit	csf.h	/^  double fit;  \/\/the error of CPD$/;"	m	struct:ktensors
+fit_avg	types.h	/^    double      fit_avg;$/;"	m	struct:__anon8
+fit_max	types.h	/^    int         fit_max;$/;"	m	struct:__anon8
+fit_min	types.h	/^    int         fit_min;$/;"	m	struct:__anon8
+fit_novar	types.h	/^    int         fit_novar;$/;"	m	struct:__anon8
+fit_prev	types.h	/^    int         fit_prev;$/;"	m	struct:__anon8
+fit_tot	types.h	/^    double      fit_tot;$/;"	m	struct:__anon8
+fitness	fitness.c	/^void fitness(deme *subpop) {$/;"	f
+fitness	types.h	/^    double      fitness;$/;"	m	struct:__anon7
+fitness_shpath	fitness.c	/^void fitness_shpath(deme *subpop) {$/;"	f
+fitness_simple	fitness.c	/^void fitness_simple(deme *subpop) {$/;"	f
+fptr	csf.h	/^  idx_t* fptr[MAX_NMODES-1]; \/\/the start of a fid sub-tree.Like the k-pointer in documentation fptr[nmode-1]may not need$/;"	m	struct:__anon3
+free_path	fitness.c	/^void free_path(point **path) {$/;"	f
+ftype	io.c	/^struct ftype$/;"	s	file:
+func_flag	kernel_slave.c	/^int ini_flag=0,n_flag,func_flag;$/;"	v
+func_num	common.h	/^  int func_num;$/;"	m	struct:genetic_array
+genetic_array	common.h	/^typedef struct genetic_array {$/;"	s
+genetic_array	common.h	/^} genetic_array;$/;"	t	typeref:struct:genetic_array
+get_file_type	io.c	/^splatt_file_type get_file_type($/;"	f
+get_file_type	io.h	48;"	d
+get_input	init.c	/^void get_input(deme *subpop) {$/;"	f
+get_point	init.c	/^point *get_point(FILE *fp, char *varname) {$/;"	f
+get_reply	matrixnormal_slave.c	/^__thread_local volatile int get_reply, put_reply;$/;"	v
+get_value	init.c	/^double get_value(FILE *fp, char *varname) {$/;"	f
+i	matrixnormal_slave.c	/^__thread_local idx_t i,n,j; \/\/i:data counter n:transport counter$/;"	v
+idx_t	base.h	/^typedef uint64_t idx_t;$/;"	t
+idx_width	io.h	/^  uint64_t idx_width;$/;"	m	struct:__anon15
+import_population	init.c	/^void import_population(deme *subpop, char *filename) {$/;"	f
+ind	sptensor.h	/^  idx_t** ind;   \/** An m x nnz matrix containing the coordinates of each$/;"	m	struct:__anon16
+ini_flag	kernel_slave.c	/^int ini_flag=0,n_flag,func_flag;$/;"	v
+init_population	init.c	/^void init_population(deme *subpop, int argc, char *argv[]) {$/;"	f
+j	matrixnormal_slave.c	/^__thread_local idx_t i,n,j; \/\/i:data counter n:transport counter$/;"	v
+ktensor_display	csf.c	/^void ktensor_display(ktensors* aktensor)$/;"	f
+ktensor_free	csf.c	/^void ktensor_free(ktensors* aktensor)$/;"	f
+ktensors	csf.h	/^  }ktensors;$/;"	t	typeref:struct:ktensors
+ktensors	csf.h	/^typedef struct ktensors  \/\/CPD output$/;"	s
+lambda	csf.h	/^  double* lambda;$/;"	m	struct:ktensors
+lambda_number	matrixnormal_slave.c	/^__thread_local idx_t lambda_position, lambda_number; \/\/which lambda to process$/;"	v
+lambda_position	matrixnormal_slave.c	/^__thread_local idx_t lambda_position, lambda_number; \/\/which lambda to process$/;"	v
+last_tran	matrixnormal_slave.c	/^__thread_local idx_t trans_time, last_tran;$/;"	v
+m	common.h	/^  int m;$/;"	m	struct:genetic_array
+m_d	common.h	/^  void *m_d;$/;"	m	struct:genetic_array
+magic	io.h	/^  int32_t magic;$/;"	m	struct:__anon15
+main	ga.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	storemain.c	/^int main(int argc, char** argv)$/;"	f
+make_path	fitness.c	/^point **make_path(char *chr, point *s, point *t) {$/;"	f
+mat_write	io.c	/^void mat_write($/;"	f
+mat_write_file	io.c	/^void mat_write_file($/;"	f
+matbuff	matrixnormal_slave.c	/^__thread_local double matbuff,matbuff2;$/;"	v
+matbuff2	matrixnormal_slave.c	/^__thread_local double matbuff,matbuff2;$/;"	v
+matrix_2normalize_slave	matrixnormal_slave.c	/^void matrix_2normalize_slave(norm_t anorm)$/;"	f
+matrix_alloc	matrixprocess.c	/^ordi_matrix* matrix_alloc(  idx_t const nrows,$/;"	f
+matrix_ata	matrixprocess.c	/^void matrix_ata(  ordi_matrix * A,  \/\/have to be paralleled$/;"	f
+matrix_ata_hada	matrixprocess.c	/^void matrix_ata_hada( ordi_matrix** mats,$/;"	f
+matrix_change_pattern	matrixprocess.c	/^ordi_matrix* matrix_change_pattern(ordi_matrix const* const mat)$/;"	f
+matrix_cholesky	matrixprocess.c	/^void matrix_cholesky(  ordi_matrix * A,$/;"	f
+matrix_display	matrixprocess.c	/^void matrix_display(ordi_matrix const* A)$/;"	f
+matrix_free	matrixprocess.c	/^void matrix_free( ordi_matrix* mat)$/;"	f
+matrix_graminverse	matrixprocess.c	/^void matrix_graminverse(  idx_t const mode,$/;"	f
+matrix_maxnormalize_slave	matrixnormal_slave.c	/^void matrix_maxnormalize_slave(norm_t anorm)$/;"	f
+matrix_multiply	matrixprocess.c	/^void matrix_multiply(ordi_matrix * A,    \/\/C = AB + C $/;"	f
+matrix_normalize	matrixnormal_host.c	/^void matrix_normalize(ordi_matrix *const A,$/;"	f
+matrix_normalize	matrixprocess.c	/^void matrix_normalize(  ordi_matrix* const A,$/;"	f
+matrix_randomize	matrixprocess.c	/^ordi_matrix* matrix_randomize(  idx_t const nrows,$/;"	f
+matrix_start	matrixnormal_slave.c	/^__thread_local idx_t matrix_start,start;$/;"	v
+matrix_syminverse	matrixprocess.c	/^void matrix_syminverse(ordi_matrix* A)$/;"	f
+mats	mttkrp.h	/^  ordi_matrix** mats;$/;"	m	struct:__anon12
+migration	ga.c	/^void migration(deme *subpop) {$/;"	f
+mode	mttkrp.h	/^  int mode;$/;"	m	struct:__anon12
+monotonic_seconds	timer.h	/^static inline double monotonic_seconds()$/;"	f
+mt	mt_mpi.c	/^static unsigned long mt[NUM_RNG][N]; \/\/ State vector$/;"	v	file:
+mt_init	mt_mpi.c	/^void mt_init(int my_rank, unsigned long seed) {$/;"	f
+mt_probability	mt_mpi.c	/^int mt_probability(float prob, int my_rank) {$/;"	f
+mt_rand_32	mt_mpi.c	/^unsigned long mt_rand_32(int my_rank) {$/;"	f
+mt_rand_bit	mt_mpi.c	/^char mt_rand_bit(int my_rank) {$/;"	f
+mt_rand_int	mt_mpi.c	/^int mt_rand_int(int n, int my_rank) {$/;"	f
+mt_rand_real	mt_mpi.c	/^long double mt_rand_real(double n, int my_rank) {$/;"	f
+mti	mt_mpi.c	/^static int mti[NUM_RNG];       \/\/ mti[x]==N+1 means mt[x][N] is not initialized$/;"	v	file:
+mttkrp_csf	mttkrp.c	/^void mttkrp_csf($/;"	f
+mttkrp_csf_slave	mttkrp_slave.c	/^void mttkrp_csf_slave(mttkrp_data* amttkrpdata)$/;"	f
+mttkrp_data	mttkrp.h	/^ }mttkrp_data;$/;"	t	typeref:struct:__anon12
+mutation	ga.c	/^void mutation(deme *subpop) {$/;"	f
+my_id	matrixnormal_slave.c	/^__thread_local int my_id;$/;"	v
+mylambda	matrixnormal_slave.c	/^__thread_local double mylambda;$/;"	v
+n	common.h	/^  int n;$/;"	m	struct:genetic_array
+n	matrixnormal_slave.c	/^__thread_local idx_t i,n,j; \/\/i:data counter n:transport counter$/;"	v
+n_flag	kernel_slave.c	/^int ini_flag=0,n_flag,func_flag;$/;"	v
+n_objs	types.h	/^    int         n_objs;$/;"	m	struct:__anon8
+new_pop	types.h	/^    org         **new_pop;$/;"	m	struct:__anon8
+nfactors	mttkrp.h	/^  idx_t nfactors;$/;"	m	struct:__anon12
+nfibs	csf.h	/^  idx_t nfibs[MAX_NMODES]; \/\/the size of each fptr and fids array$/;"	m	struct:__anon3
+nmodes	csf.h	/^  idx_t nmodes;  \/\/number of modes in the tensor$/;"	m	struct:ktensors
+nmodes	csf.h	/^  idx_t nmodes; \/\/number of modes$/;"	m	struct:__anon4
+nmodes	sptensor.h	/^  idx_t nmodes;   \/** The number of modes in the tensor, denoted 'm'. *\/$/;"	m	struct:__anon16
+nnz	csf.h	/^  idx_t nnz; \/\/number of nonzeros$/;"	m	struct:__anon4
+nnz	matrixprocess.h	/^   idx_t nnz;$/;"	m	struct:__anon2
+nnz	sptensor.h	/^  idx_t nnz;      \/** The number of nonzeros in the tensor. *\/$/;"	m	struct:__anon16
+norm_t	matrixnormal_host.h	/^} norm_t;$/;"	t	typeref:struct:__anon9
+object	types.h	/^} object;$/;"	t	typeref:struct:__anon6
+objs	types.h	/^    object      **objs;$/;"	m	struct:__anon8
+old_pop	types.h	/^    org         **old_pop;$/;"	m	struct:__anon8
+open_f	io.h	/^static inline FILE * open_f($/;"	f
+ordi_matrix	matrixprocess.h	/^}ordi_matrix;$/;"	t	typeref:struct:__anon1
+org	types.h	/^} org;$/;"	t	typeref:struct:__anon7
+oszfunc	kernel_slave.c	/^void oszfunc (double *x, double *xosz, int nx)$/;"	f
+p_calc_fit	cpd.c	/^static double  p_calc_fit($/;"	f	file:
+p_form_gram	matrixprocess.c	/^static void p_form_gram($/;"	f	file:
+p_kruskal_norm	cpd.c	/^static double p_kruskal_norm($/;"	f	file:
+p_mat_2norm	matrixprocess.c	/^static void p_mat_2norm(  ordi_matrix * A,$/;"	f	file:
+p_mat_backwardsolve	matrixprocess.c	/^static void p_mat_backwardsolve($/;"	f	file:
+p_mat_forwardsolve	matrixprocess.c	/^static void p_mat_forwardsolve($/;"	f	file:
+p_mat_maxnorm	matrixprocess.c	/^static void p_mat_maxnorm(  ordi_matrix *  A,$/;"	f	file:
+p_mk_fptr	csf.c	/^static void p_mk_fptr($/;"	f	file:
+p_modecounter	csf.c	/^static void p_modecounter(csf_sptensor* ct,$/;"	f	file:
+p_rearrange	csf.c	/^static void p_rearrange(sptensor_t* tt, idx_t mode)$/;"	f	file:
+p_same_coord	sptensor.c	/^static inline int p_same_coord($/;"	f	file:
+p_tt_kruskal_inner	cpd.c	/^static double p_tt_kruskal_inner(         \/\/stay here$/;"	f	file:
+p_tt_read_binary_file	io.c	/^static sptensor_t * p_tt_read_binary_file($/;"	f	file:
+p_tt_read_file	io.c	/^static sptensor_t * p_tt_read_file($/;"	f	file:
+p_write_tt_binary_header	io.c	/^static void p_write_tt_binary_header($/;"	f	file:
+parent1	types.h	/^    int         parent1;$/;"	m	struct:__anon7
+parent2	types.h	/^    int         parent2;$/;"	m	struct:__anon7
+point	types.h	/^} point;$/;"	t	typeref:struct:__anon5
+pop_size	types.h	/^    int         pop_size;$/;"	m	struct:__anon8
+pt	csf.h	/^  csf_sparsity* pt; \/\/sparsity structures(need to be pointer when paralleled)$/;"	m	struct:__anon4
+pt_copy	fitness.c	/^void pt_copy(point *dest, point *src) {$/;"	f
+pt_dist	fitness.c	/^double pt_dist(point *p1, point *p2) {$/;"	f
+put_reply	matrixnormal_slave.c	/^__thread_local volatile int get_reply, put_reply;$/;"	v
+quicksort	util.c	/^void quicksort(idx_t*  sortarray, idx_t*  noarray0, idx_t*  noarray1, double* value, idx_t begin, idx_t end)$/;"	f
+radius	types.h	/^    int        radius;$/;"	m	struct:__anon6
+rand_seed	types.h	/^    int         rand_seed;$/;"	m	struct:__anon8
+rank	csf.h	/^  idx_t rank;   \/\/rank of the decomposition$/;"	m	struct:ktensors
+rastrigin_func	kernel_slave.c	/^void rastrigin_func (double *x, double *f, int nx, double *Os,int r_flag) \/* Rastrigin's  *\/$/;"	f
+read_binary_header	io.c	/^void read_binary_header($/;"	f
+read_binary_header	io.h	87;"	d
+report_all	report.c	/^void report_all(deme* subpop) {$/;"	f
+report_fittest	report.c	/^void report_fittest(deme *subpop) {$/;"	f
+report_member	report.c	/^void report_member(deme *subpop, char *chr) {$/;"	f
+report_times	timer.c	/^void report_times(timer * const atimer)$/;"	f
+reproduction	ga.c	/^void reproduction(deme *subpop) {$/;"	f
+rotatefunc	kernel_slave.c	/^void rotatefunc (double *x, double *xrot, int nx,double *m_d)$/;"	f
+row_col_flag	matrixprocess.h	/^   int row_col_flag;\/\/default:row_first(1)$/;"	m	struct:__anon1
+row_id	matrixnormal_slave.c	/^__thread_local int row_id, column_id;$/;"	v
+rowptr	matrixprocess.h	/^   idx_t* rowptr;$/;"	m	struct:__anon2
+rpcc	cpd.c	/^static inline unsigned long rpcc()$/;"	f	file:
+rpcc1	timer.h	/^static inline idx_t rpcc1()$/;"	f
+running	timer.h	/^  bool running;$/;"	m	struct:__anon11
+s	types.h	/^    point       *s;$/;"	m	struct:__anon8
+schwefel_func	kernel_slave.c	/^void schwefel_func (double *x, double *f, int nx, double *Os, int r_flag) \/* Schwefel's  *\/$/;"	f
+seconds	timer.h	/^  double seconds;$/;"	m	struct:__anon11
+selection	ga.c	/^int selection(deme *subpop) {$/;"	f
+shiftfunc	kernel_slave.c	/^void shiftfunc (double *x, double *xshift, int nx,double *Os)$/;"	f
+sphere_func	kernel_slave.c	/^void sphere_func (double *x, double *f, int nx, double *Os, int r_flag) \/* Sphere *\/$/;"	f
+splatt_file_type	io.h	/^} splatt_file_type;$/;"	t	typeref:enum:__anon13
+splatt_magic_type	io.h	/^} splatt_magic_type;$/;"	t	typeref:enum:__anon14
+spmat_write	io.c	/^void spmat_write($/;"	f
+spmat_write_file	io.c	/^void spmat_write_file($/;"	f
+spmatrix_alloc	matrixprocess.c	/^spordi_matrix* spmatrix_alloc(  idx_t const nrows,$/;"	f
+spmatrix_free	matrixprocess.c	/^void spmatrix_free(spordi_matrix* mat)$/;"	f
+spordi_matrix	matrixprocess.h	/^} spordi_matrix;$/;"	t	typeref:struct:__anon2
+sptensor_t	sptensor.h	/^} sptensor_t;$/;"	t	typeref:struct:__anon16
+start	matrixnormal_slave.c	/^__thread_local idx_t matrix_start,start;$/;"	v
+start	timer.h	/^  double start;$/;"	m	struct:__anon11
+stop	timer.h	/^  double stop;$/;"	m	struct:__anon11
+sw_cpd_stop	test.c	/^void sw_cpd_stop(void)$/;"	f
+sync_complete	ga.c	/^void sync_complete(deme *subpop) {$/;"	f
+t	types.h	/^    point       *t;$/;"	m	struct:__anon8
+tensors	mttkrp.h	/^  csf_sptensor* tensors;$/;"	m	struct:__anon12
+test_func	kernel_slave.c	/^void test_func(double *x, double *f, double *m_d, double *OShift, int nx, int mx,int func_num, int cf_num)$/;"	f
+test_input	init.c	/^void test_input(deme* subpop) {$/;"	f
+time_seed	mt_mpi.c	/^unsigned long time_seed() {$/;"	f
+timer	timer.h	/^}timer;$/;"	t	typeref:struct:__anon11
+timer_fstart	timer.h	/^static inline void timer_fstart(timer* const atimer)$/;"	f
+timer_reset	timer.h	/^static inline void timer_reset(timer * const atimer)$/;"	f
+timer_start	timer.h	/^static inline void timer_start(timer * const atimer)$/;"	f
+timer_stop	timer.h	/^static inline void timer_stop(timer* const atimer)$/;"	f
+times_begin	matrixnormal_slave.c	/^__thread_local idx_t times_begin,times_end;$/;"	v
+times_end	matrixnormal_slave.c	/^__thread_local idx_t times_begin,times_end;$/;"	v
+trans_time	matrixnormal_slave.c	/^__thread_local idx_t trans_time, last_tran;$/;"	v
+tt_alloc	sptensor.c	/^sptensor_t * tt_alloc($/;"	f
+tt_density	sptensor.c	/^double tt_density($/;"	f
+tt_fill	sptensor.c	/^void tt_fill($/;"	f
+tt_free	sptensor.c	/^void tt_free($/;"	f
+tt_get_dims	io.c	/^void tt_get_dims($/;"	f
+tt_normsq	sptensor.c	/^double tt_normsq(sptensor_t const * const tt)$/;"	f
+tt_read	sptensor.c	/^sptensor_t * tt_read($/;"	f
+tt_read_binary_file	io.c	/^sptensor_t * tt_read_binary_file($/;"	f
+tt_read_file	io.c	/^sptensor_t * tt_read_file($/;"	f
+tt_write	io.c	/^void tt_write($/;"	f
+tt_write_binary	io.c	/^void tt_write_binary($/;"	f
+tt_write_binary_file	io.c	/^void tt_write_binary_file($/;"	f
+tt_write_file	io.c	/^void tt_write_file($/;"	f
+type	io.c	/^  splatt_file_type type;$/;"	m	struct:ftype	file:
+usage	report.c	/^void usage() {$/;"	f
+usage2	report.c	/^void usage2() {$/;"	f
+val_width	io.h	/^  uint64_t val_width;$/;"	m	struct:__anon15
+valid_loc	fitness.c	/^int valid_loc(point *p) {$/;"	f
+vals	sptensor.h	/^  double* vals;   \/** An array containing the values of each nonzero. *\/$/;"	m	struct:__anon16
+values	csf.h	/^  double* values; \/\/the nnz values.$/;"	m	struct:__anon3
+values	matrixprocess.h	/^   double* values;$/;"	m	struct:__anon1
+values	matrixprocess.h	/^   double* values;$/;"	m	struct:__anon2
+vec_write	io.c	/^void vec_write($/;"	f
+vec_write_file	io.c	/^void vec_write_file($/;"	f
+x	common.h	/^  void *x;$/;"	m	struct:genetic_array
+x	types.h	/^    int x;$/;"	m	struct:__anon5
+x_bound	kernel_slave.c	/^double *OShift,*M,*y,*z,*x_bound;$/;"	v
+y	kernel_slave.c	/^double *OShift,*M,*y,*z,*x_bound;$/;"	v
+y	types.h	/^    int y;$/;"	m	struct:__anon5
+z	kernel_slave.c	/^double *OShift,*M,*y,*z,*x_bound;$/;"	v
+z	types.h	/^    int z;$/;"	m	struct:__anon5

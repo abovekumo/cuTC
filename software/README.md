@@ -26,6 +26,10 @@ To build the cuTC for multiple GPUs in /multiple GPU/mgpu:
 
 ### 4. Build the auto-tuning
 
+To build the genetic search in /autotuning:
+
+`make`
+
 ## Run
 
 ### 1. Run the cuTC for single GPU
@@ -50,7 +54,7 @@ Please do not forget to change the name of algorithm type and tensor name in run
 
 ### 3. Run the auto-tuning
 
-
+`./ga` or `./run.sh`
 
 ## Change the parameters
 

@@ -54,7 +54,7 @@ Please do not forget to change the name of algorithm type and tensor name in run
 
 ### 3. Run the auto-tuning
 
-`./ga` or `./run.sh`
+`./run.sh`
 
 ## Change the parameters
 

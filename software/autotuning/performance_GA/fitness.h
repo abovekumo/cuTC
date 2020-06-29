@@ -14,5 +14,7 @@ point   **make_path(char*, point*, point*);
 void    free_path(point**);
 int 	binToDecimal(char*, unsigned int, unsigned int);
 
+idx_t tc_main(char* input_traina, char* input_trainb, char* input_trainc, char* input_validation, char *input_test, int SGD_DEFAULT_BLOCKSIZE, int SGD_DEFAULT_T_TILE_LENGTH);
+
 #endif
 

@@ -241,7 +241,7 @@ void tt_get_dims(
   char * ptr = NULL;
   idx_t nnz = 0;
   char * line = NULL;
-  ssize_t read;
+  size_t read;
   size_t len = 0;
   idx_t m = 0;
   idx_t ind;

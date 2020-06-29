@@ -5,7 +5,6 @@
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <athread.h>
 #include <string.h>
 #include "config.h"
 #include "init.h"
@@ -17,13 +16,11 @@
 #include "common.h"
 
 #include "base.h"
-//extern SLAVE_FUN(compute_genetic)(void *);
 
 int main(int argc, char *argv[]) {
 	int my_rank;
 	double mpi_start_time, mpi_end_time;
 	deme *subpop = (deme*) malloc(sizeof(deme));
-    //athread_init();
     
     //idx_t max_cost = atoi(argv[1]);
     //printf("max_cost = %ld\n", max_cost);
@@ -33,7 +30,6 @@ int main(int argc, char *argv[]) {
     //printf("***** init population *****\n");
 	init_population(subpop, argc, argv);
 	mpi_start_time = MPI_Wtime();
-	//athread_init();
     printf("***** begin iteration *****\n");
 	while (!subpop->complete) {
         //printf("***** migration process *****\n");
@@ -60,7 +56,6 @@ int main(int argc, char *argv[]) {
 	
 	mpi_end_time = MPI_Wtime();
 	report_fittest(subpop);
-	athread_halt();
 	MPI_Finalize();
 	printf("[%i] Elapsed time: %f\n", my_rank, mpi_end_time - mpi_start_time);
 	return 0;
@@ -129,13 +124,13 @@ int selection(deme *subpop, int id) {
 
     int counter = 0;
 
-    int my_row = id / 8;
-    int my_col = id % 8;
+    int my_row = id / 4;
+    int my_col = id % 4;
     
-    if (my_row - 1 >= 0) selection_items[counter++] = id - 8;
+    if (my_row - 1 >= 0) selection_items[counter++] = id - 4;
     if (my_col - 1 >= 0) selection_items[counter++] = id - 1;
-    if (my_col + 1 < 8) selection_items[counter++] = id + 1;
-    if (my_row + 1 < 8) selection_items[counter++] = id + 8;
+    if (my_col + 1 < 4) selection_items[counter++] = id + 1;
+    if (my_row + 1 < 4) selection_items[counter++] = id + 4;
 	
 	//for (i = 0; i < subpop->pop_size && current_sum <= rand; i++) {
 	for (i = 0; i < counter && current_sum <= rand; i++) {
@@ -164,9 +159,7 @@ void reproduction(deme *subpop) {
 		int p1 = selection(subpop, i);
 		int p2 = selection(subpop, i);
         //printf("i=%d, line 139!\n", i);
-        //printf("beform while!\n");
 		while (p1 == p2) p2 = selection(subpop, i);
-		//printf("after while!\n");
 		// Use these as the parents of two individuals in the next generation
         //printf("i=%d, line 143!\n", i);
 

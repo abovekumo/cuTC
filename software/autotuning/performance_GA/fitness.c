@@ -3,7 +3,6 @@
 /* ========================================================================= */
 #include <stdio.h>
 #include <stdlib.h>
-#include <athread.h>
 #include <math.h>
 #include <unistd.h>
 #include "config.h"
@@ -13,7 +12,6 @@
 
 #include "base.h"
 
-//extern SLAVE_FUN(compute_genetic)(void*);
 /* ------------------------------------------------------------------------- */
 /* Call the appropriate fitness function									 */
 /* ------------------------------------------------------------------------- */
@@ -31,49 +29,56 @@ void fitness(deme *subpop) {
 
 
 void fitness_simple(deme *subpop) {
-	idx_t max_cost = MAX_COST;
+    idx_t max_cost = MAX_COST;
     int i, j, x[DIM];
     int n = DIM, sr = SEARCH_RANGE;
     double fit;
 
-	org** pop;
-	if (subpop->fit_tot < 1) pop = subpop->old_pop;
-	else					 pop = subpop->new_pop;
-
-	subpop->fit_prev = subpop->fit_avg;
-	subpop->fit_avg = 0.0;
-	subpop->fit_tot = 0.0;
+    org** pop;
+    if (subpop->fit_tot < 1) pop = subpop->old_pop;
+    else					 pop = subpop->new_pop;
+    
+    subpop->fit_prev = subpop->fit_avg;
+    subpop->fit_avg = 0.0;
+    subpop->fit_tot = 0.0;
 
     int *gen_x = (int*)malloc(subpop->pop_size*DIM*sizeof(int));
     idx_t *aveTime = (idx_t*)malloc(subpop->pop_size*sizeof(idx_t));
-    idx_t *gen_ave = (idx_t*)malloc(63*63*sizeof(idx_t));
-    FILE *fpt;
-    char FileName[20];
-    sprintf(FileName, "datasets/perf_4.txt");
-    fpt = fopen(FileName, "r");
-    if (fpt == NULL)
-        printf("\n Error while opening input file \n");
+    //idx_t *gen_ave = (idx_t*)malloc(512*sizeof(idx_t));
+// initialize datasets
+    char* input_traina = "/home/dm/database/train/yelp_tr.tns";
+    char* input_trainb = "/home/dm/database/train/yelp_tr2.tns";
+    char* input_trainc = "/home/dm/database/train/yelp_tr3.tns";
+    char* input_validation = "/home/dm/database/validate/yelp_v.tns";
+    char* input_test = "/home/dm/database/test/yelp_te.tns";
 
-    for (i = 0; i < 63 * 63; i++) {
-        fscanf(fpt, "%Ld", &gen_ave[i]);
-    }
+    //FILE *fpt;
+    //char FileName[20];
+    //sprintf(FileName, "datasets/perf_0.txt");
+    //fpt = fopen(FileName, "r");
+    //if (fpt == NULL)
+    //    printf("\n Error while opening input file \n");
 
-    fclose(fpt);
-	for (i = 0; i < subpop->pop_size; i++) {
-		for(j = 0; j < n; j++) {
-			x[j] = binToDecimal(pop[i]->chr, sr*j, sr*j+sr-1);
-            if(x[j] == 63) x[j] = 62; // temp modify
-            gen_x[i*n+j] = x[j];
+    //for (i = 0; i < 512; i++) {
+    //    fscanf(fpt, "%Ld", &gen_ave[i]);
+    //}
+
+    //fclose(fpt);
+    for (i = 0; i < subpop->pop_size; i++) {
+	for (j = 0; j < n; j++) {
+	     x[j] = binToDecimal(pop[i]->chr, sr*j, sr*j+sr-1);
+	     if (j == 0)
+	 	gen_x[i*n+j] = pow(2, (x[j] % 8 + 2));
+	     else
+             	gen_x[i*n+j] = x[j];
         }
-        //printf("\n");
-			//x[j] = 8;
     }
 
     for (i = 0; i < subpop->pop_size; i++) {
         //printf("pop = %d, BbufferLength = %d, CbufferLength = %d\n", i, gen_x[i*n], gen_x[i*n+1]);
-        //aveTime[i] = cpd_als_main(gen_x[i*n], gen_x[i*n+1]);
-        int cpdId = gen_x[i*n] * 63 + gen_x[i*n+1];
-        aveTime[i] = gen_ave[cpdId];
+        aveTime[i] = tc_main(input_traina, input_trainb, input_trainc, input_validation, input_test, gen_x[i*n], gen_x[i*n+1]);
+        //int cpdId = gen_x[i];
+        //aveTime[i] = gen_ave[cpdId];
         //sleep(1);
     }
     

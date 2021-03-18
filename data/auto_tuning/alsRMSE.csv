@@ -1,0 +1,6 @@
+tensorname , bestRMSE , bestRegular , 
+['nell-1'] , 23.5988 , 4.0 , 
+['nell-2'] , 82.4968 , 20.0 , 
+['1998DARPA'] , 1.12053 , 1.0 , 
+['movielens'] , 3.67024 , 20.0 , 
+['yelp'] , 3.97847 , 40.0 , 

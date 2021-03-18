@@ -1,0 +1,6 @@
+tensorname , bestTimecost , bestBlocksize , bestTilesize , 
+['nell-1'] , 1190090.3333333333 , 512 , 1 , 
+['nell-2'] , 2899.0 , 512 , 64 , 
+['1998DARPA'] , 911336.0 , 16 , 16 , 
+['movielens'] , 3577.3333333333335 , 512 , 32 , 
+['yelp'] , 3895.3333333333335 , 512 , 2 , 

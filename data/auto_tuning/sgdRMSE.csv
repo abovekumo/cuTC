@@ -1,0 +1,6 @@
+tensorname , bestRMSE , bestRegular , bestLearnrate , bestModfyA , bestModifyB , bestModifyC , 
+['nell-1'] , 24.3675 , 1 , 0.001 , 0.01 , 0.1 , 0.01 , 
+['nell-2'] , 82.6715 , 1 , 0.0001 , 0.01 , 0.1 , 0.1 , 
+['1998DARPA'] , 5.7241 , 1 , 0.01 , 0.01 , 0.01 , 0.1 , 
+['movielens'] , 3.67029 , 1 , 0.01 , 0.1 , 0.1 , 0.01 , 
+['yelp'] , 4.08922 , 1 , 0.01 , 0.1 , 0.1 , 0.1 , 

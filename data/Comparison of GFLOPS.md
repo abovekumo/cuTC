@@ -1,8 +1,0 @@
-# Comparison of GFLOPS
-
-
-
-
-
-
-

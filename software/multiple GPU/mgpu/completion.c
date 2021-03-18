@@ -209,7 +209,7 @@ double tc_frob_sq(
     }
    
 
-  //assert(reg_obj > 0);
+  assert(reg_obj > 0);
   return reg_obj;
 }
 
@@ -395,7 +395,7 @@ static inline double p_predict_val3_sgd(
 
   idx_t f;
   for(f = 0; f < DEFAULT_NFACTORS; ++f) {
-    est += (A[f] + A_aux[f])/2 * (B[f] + B_aux[f])/2 * (C[f] + C_aux[f]) / 2;
+    est += (A[f] + A_aux[f]) * (B[f] + B_aux[f]) * (C[f] + C_aux[f]);
   }
 
   return est;
@@ -482,7 +482,7 @@ double tc_frob_sq_sgd(
     }
    
 
-  //assert(reg_obj > 0);
+  assert(reg_obj > 0);
   return reg_obj;
 }
 

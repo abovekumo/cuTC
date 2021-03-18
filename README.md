@@ -2,8 +2,12 @@
 
 ## Code
 
-Directory: software Read software/README.md for more information.
+Directory: software 
+
+Read software/README.md for more information.
 
 ## Data
 
-Directory: data Please refer to files in data/ for the detailed evaluation results.
+Directory: data 
+
+Please refer to files in data/ for the detailed evaluation results.

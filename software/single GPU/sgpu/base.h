@@ -10,8 +10,8 @@
 #include <limits.h>
 #include <assert.h>
 
-#include <cuda.h>
-#include <cuda_runtime.h>
+#include "/usr/local/cuda-10.2/include/cuda.h"
+#include "/usr/local/cuda-10.2/include/cuda_runtime.h"
 
 
 

@@ -8,6 +8,8 @@ Read software/README.md for more information.
 
 ## Data
 
-Directory: data 
+Auto-tuning parameters: Directory: parameters
 
-Please refer to files in data/ for the detailed evaluation results.
+Number of iterations: Directory: iterations
+
+Please refer to files in those folders for the detailed evaluation results.
